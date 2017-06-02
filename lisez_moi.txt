@@ -1,0 +1,37 @@
+Bonjour tout le monde!
+
+Pour utiliser le chat, c'est assez simple. Vous devez éditer le fichier chat_config.php et y placer
+vos propres paramètres concernant l'adresse et le port sur lequel le serveur doit établir une socket
+d'écoute.
+
+Comme je l'ai dit dans le tuto, faites bien attention d'utiliser un numéro de port qui ne soit pas déjà utilisé
+par une autre appli.
+
+Vous pouvez par exemple utiliser 9814 qui est rarement déjà utilisé. 
+
+Ensuite, sous DOS:
+
+
+cd c:\php\cli 
+php votre_racine_web\stephaneey_chat\start_chap.php
+
+Sous linux, la manip est semblable mais il faut simplement localiser votre répertoire CLI et le démarrer de la même manière en ajoutant un & à la fin,
+pour démarrer le process en background, enfin ça, c'est comme vous voulez.
+
+
+Lorsque le serveur est démarré et que vous voulez tester, ouvrez votre navigateur sur l'url
+
+http://votre_hôte/stephaneey_chat/chat_entry.php
+
+ATTENTION: si vous désirez ouvrir plusieurs fenêtres en même temps pour tester le chat, il faut
+que vous ouvriez deux fenêtres à l'URL citée ci-dessus!
+
+Là, un pseudo vous sera demandé, entrez le et cliquer sur OK. Une popup devrait à présent s'ouvrir,
+avec un frameset dont la frame du haut est en fait la partie connectée au serveur et la frame du bas vous
+sert à envoyer vos messages.
+
+Vous pouvez bien sûr utiliser ce chat, l'améliorer, en faire exactement ce que vous voulez. J'ai
+conscience que ce chat est assez maigre au niveau fonctionalité mais je voulais juste vous fournir un exemple de travail
+avec les sockets.
+
+Voilà, bon travail!
